@@ -1,0 +1,173 @@
+
+
+
+
+
+
+<!-- START ABOUT US SECTION -->
+<div id="about" class="page">
+
+    <div class="container">
+        <div class="row">
+            <div class="sixteen columns">
+                <!-- START TITLE -->
+                <div class="title">
+                    <h1>Объявления</h1>
+                    <div class="subtitle">
+
+                    </div><!-- END SUBTITLE -->
+                </div><!-- END TITLE -->
+            </div><!-- END SIXTEEN COLUMNS -->
+        </div><!-- END ROW -->
+    </div><!-- END CONTAINER -->
+
+
+
+
+    <div class="fullwidth grey">
+        <div class="container">
+
+
+            <div class="row">
+
+
+                <div id="forAdwFromSocket" class="sixteen columns">
+
+
+                    {{#each adw}}
+
+
+
+
+
+                        <div class="callout clearfix" style="margin-top:20px">
+                            <div class="callout-content">
+
+
+                                <div class="row">
+
+                                    <div class="sixteen columns">
+
+
+                                        <h3 class="highlight" style="width: 95%">{{title}}</h3>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <div class="row">
+
+                                    <div class="sixteen columns">
+
+
+                                        <p class="lead" style="width: 90%">{{text}}</p>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+
+                            <div class="one_third">
+
+                                <h4>Дата публикации:<br><span class="bold2"> {{datePublish}}</span></h4>
+
+                            </div>
+
+
+                            <div class="one_third">
+
+                            <h4>Заказчик:<br><span class="bold2">{{FIOAdw}}</span></h4>
+
+                        </div>
+
+
+                            <div class="one_third last">
+
+                            <h4>Телефон:<br><span class="bold2"> {{telephone}}</span></h4>
+
+                        </div>
+
+
+
+                            <div class="row">
+
+                                <div class="sixteen columns">
+
+                                    <input data-id="{{id}}" readonly  class="kalymtrue button" value="{{status}}" style="text-align: center; color: black">
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    {{/each}}
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+            </div><!-- END ROW -->
+        </div><!-- END CONTAINER -->
+    </div>
+
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="sixteen columns">
+                <h2>Уже объявлений в базе:</h2>
+            </div><!-- END SIXTEEN COLUMNS -->
+
+
+
+            <div class="sixteen columns">
+                <div id="forgetlenth" class="milestone-counter" data-perc="{{length adw}}">
+                    <span  class="milestone-count highlight"></span>
+                    <h6 class="milestone-details">Объявлений опубликованно</h6>
+                </div>
+            </div><!-- END FOUR COLUMNS -->
+        </div><!-- END ROW -->
+    </div><!-- END CONTAINER -->
+
+
+</div>
+<!-- End ABOUT US SECTION -->
+
+
+
+
+
+
+
